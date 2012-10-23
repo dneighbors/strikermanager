@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"><head>
+	<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script><script>
+	if(window.top!=window)
+	{
+		window.top.document.location = document.location;
+	}
+	</script>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,chrome=1">
+<title>Striker Manager. Your online football manager.</title>
+	<link rel="alternate" type="application/rss+xml" title="Feed RSS Titulares" href="http://uk.strikermanager.com/rss.php">
+	<link href="/css/estilos_as.css?3.0.27" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="/favicon.ico?3.0.27">	
+	<script src="/js/jquery-latest.js?3.0.27"></script>
+	<script src="/js/ui.core.js?3.0.27"></script>
+	<script src="/js/jquery.dimensions.min.js?3.0.27"></script>
+	<script src="/js/jquery.mousewheel.min.js?3.0.27"></script>
+	<script src="/js/jquery.marquee.js?3.0.27"></script>
+	<script src="/js/jScrollPane.js?3.0.27"></script>
+	<script>var dias_semana = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];</script>
+	<script src="/js/default.js?3.0.27"></script>
+<script src="/js/chat.js?3.0.27"></script><script src="/js/inicio.js?3.0.27"></script><!--[if IE]>
+<link href="/css/ie.css?3.0.27" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if lte IE 6]>
+<link href="/css/ie6.css?3.0.27" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<script>
+
+timeserver = 1350788907;
+
+
+$(document).ready(
+	function()
+	{
+		setHoras();
+				$("#header").click(
+			function()
+			{
+				//$("#strikernews").slideDown('fast');
+			}
+		);
+		
+		$("#strikernewsclose").click(
+			function()
+			{
+				$("#strikernews").slideUp('fast');
+			}
+		);
+
+		
+	}
+);
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1096618-4']);
+  _gaq.push(['_setDomainName', '.strikermanager.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+</head><body><div id="corto"><div id="overlay"></div><div id="flotante"><div id="header" style="background-image: url(/img/header_int.png);">
+			<div id="logoflotante" style="margin-left: 10px; margin-top: 5px;">
+				<a href="/" target="_top"><img src="/img/login/logo_int_peq2.png"></a>
+			</div>
+					</div>
+		<div id="cabecera">
+			<!--<div style="position: absolute; top: 16px; left: 300px;"><a href="http://store.uplayonline.com" target="_blank"><img src="/img/banner_striker_store.png" style="border: 0;"></a></div>-->
+			<div id="inicio">
+				<a target="marco" href="/inicio2.php" class="iniciosinborde">home</a>
+				<a target="_top" href="/foros/index.php">Forum</a>
+				<a target="_top" href="/wiki" id="link_ayuda">help</a>
+				<a target="_top" href="/logout.php">logout</a>
+			</div>
+			<div class="titulin">
+							
+								<div id="fechapart"><span class="verde3">Next Game</span>
+					&nbsp;-&nbsp;Tomorrow</div>
+
+					<div class="nombreequipo1"><a target="marco" href="equipo.php?id=102075">KK&nbsp;FC</a></div>
+
+										<img class="escudet" src="foto_peque.php?id=11020473">
+										
+					<div id="headproxpart">15:56</div>
+
+										<img class="escudet" src="foto_peque.php?id=11023171" id="fotoescudousuario">
+					
+					<div class="nombreequipo2"><a target="marco" href="equipo.php?id=2430">Pippii</a></div>
+
+						</div>
+
+			<div id="reloj"><div id="hora">05:08</div><div id="fecha">Sunday, 21</div></div>
+		</div><div class="final"></div>
+<script>
+id_equipo = 2430;
+
+
+
+function cerrarBorradoUsuario()
+{
+	$('#borrado_usuario').fadeOut('normal');
+}
+
+window.onload=function()
+{
+	var borrado = false;
+	if(borrado) $('#borrado_usuario').css('display','block');
+}
+
+</script>
+
+
+
+<div id="tooltip_ayuda2">
+	<div id="tooltip_flecha_h"></div>
+	<div id="tooltip_contents2"></div>
+</div>
+
+<div id="highlight"></div>
+
+<div id="menuizquierdo">
+<div id="inside">
+<div id="headmenu">
+<div id="menu_principal">Main Menu</div>
+<ul>
+	<li id="botonicono1" class="selected"><a target="marco" class="icono1" alt="Competition" title="Competition"></a></li>
+	<li id="botonicono2" class=""><a target="marco" class="icono2" alt="Signings" title="Signings"></a></li>
+	<li id="botonicono3" class=""><a target="marco" class="icono3" alt="Coach" title="Coach"></a></li>
+	<li id="botonicono4" class=""><a target="marco" class="icono4" alt="Club" title="Club"></a></li>
+</ul>
+
+	<div class="menu" id="menu1" style="opacity: 1; display: block; ">
+		<div class="tit">Competition</div>
+		<div><a target="marco" href="resultados.php?id_liga=40106" ayuda="RESULTADOS" help="See the results of your team in the league, friendly matches and Striker Cup.">Results</a></div>
+		<div><a target="marco" href="liga.php?id_liga=40106" ayuda="CLASIFICACION" help="The board of your team in the league.">Board</a></div>
+		<div><a target="marco" href="liga.php?juveniles=1&amp;id_liga=40106" ayuda="CLASIFICACION" help="Refer to the board of the youth league.">Juniors Table</a></div>		<div><a target="marco" href="proximos_partidos.php?id_equipo=2430" ayuda="CALENDARIO" help="Your calendar of upcoming games.">Calendar</a></div>
+		<div><a target="marco" href="estadisticas.php?id_liga=40106" ayuda="ESTADISTICAS" help="The best players in the game and rankings of top managers.">Stats</a></div>
+		<div><a target="marco" href="equipojornada.php?id_liga=40106" ayuda="PREMIOS" help="What players have had better performance on the last day?">Awards</a></div>
+	</div>
+	<div class="menu" id="menu2">
+		<div class="tit">Signings</div>
+		<div><a target="marco" href="ver_subasta.php?accion=ventas" ayuda="COMPRAS_Y_VENTAS" help="Negotiations of ongoing transfers, purchases, sales, loans and multi-offering.">Signings</a></div>
+		<div><a target="marco" href="mercado.php" ayuda="MERCADO" help="Find your upcoming star player in the transfer market.">Market</a></div>
+		<div><a target="marco" href="cartera.php" ayuda="CARTERA" help="Keep a track of players who interest you.">Shortlist</a></div>
+		<div><a target="marco" href="empleados.php" ayuda="EMPLEADOS" help="Want to keep a meeting with your employees?">Staff</a></div>
+		<div><a target="marco" href="ojeador.php?tipo=1" ayuda="SECRETARIO_TECNICO_Y_OJEADOR" help="Order the technical director to find a player that fits your team.">Techn. director</a></div>
+		<div><a target="marco" href="ojeador.php?tipo=2" ayuda="SECRETARIO_TECNICO_Y_OJEADOR" help="Discover future stars. The scout can also find young players without a team.">Scout</a></div>
+	</div>
+	<div class="menu" id="menu3">
+		<div class="tit">Coach</div>
+		<div><a target="marco" href="alineacion.php" ayuda="ALINEACION" help="Prepare the line-up for your upcoming game.">Line-up</a></div>
+		<div><a target="marco" href="plantilla.php?id_equipo=2430" ayuda="PLANTILLA" help="Manage your squad of players: re-sign or terminate player contracts and list players for transfer.">Squad</a></div>
+		<div><a target="marco" href="alineacion_juveniles.php" ayuda="ALINEACION" help="Set the alignment of your youth players for league matches.">Junior line-up</a></div>
+		<div><a target="marco" href="plantilla.php?juveniles=1&amp;id_equipo=2430" ayuda="JUVENILES" help="Check out your future star players list, they are the team's future.">Junior Squad</a></div>
+		<div><a target="marco" href="tactica.php" ayuda="TACTICAS" help="Define your captain, player changes and set your formation for the match.">Tactics</a></div>
+		<div><a target="marco" href="entrenamiento.php" ayuda="ENTRENAMIENTO" help="Remember, you must schedule a workout for every day!">Training</a></div>
+		
+		<!-- <div><a target="marco" href="verrival.php" ayuda="FICHA_DEL_EQUIPO" help="Study and play the rival with whom you are dealing.">View opponent</a></div> -->
+	</div>
+	<div class="menu" id="menu4">
+		<div class="tit">Club</div>
+		<div><a target="marco" href="tienda.php" ayuda="TIENDA" help="TIENDA_HELP">
+		STORE</a></div>
+		<div><a target="marco" href="caja.php" ayuda="FINANZAS" help="Always keep an eye on the finances of your team, money is the most important.">Finances</a></div>
+		<div><a target="marco" href="estadio.php" ayuda="ESTADIO" help="The jewel in the crown, set the ticket prices, remodel the stadium, billboards and accessories.">Stadium</a></div>
+		<div><a target="marco" href="escuelas.php" ayuda="ESCUELAS" help="Investing in building schools around the world! In return for your investment, you may end up training a quality player!">Schools</a></div>
+		<div><a target="marco" href="noticias_periodico.php?tipo=periodico&amp;inside=1" ayuda="NOTICIAS" help="What's happening in Striker Manager? Read the news published by the most prestigious journalists in the game.">Striker News</a></div>
+		<div><a target="marco" href="noticias.php?pagina=0&amp;liga=40106" ayuda="NOTICIAS" help="Here you can see what has happened in your league these last days.">News</a></div>
+	</div>
+</div>
+<div class="menupers">				
+	<div class="secmenu">
+		<div class="escudo" id="fotousuario" style="background: url('foto.php?id=11023171') 50% 50% no-repeat;"><a target="marco" href="cambiarfoto.php"></a></div>
+		<div class="secdatos">
+			<div id="nuevochat"></div>
+			<div id="nuevomens"><a href="/mensajes_ver.php" target="marco">New message received.</a></div>
+			<span class="nobold color_skin">Coach</span><br>
+			<a target="marco" href="usuario.php" class="color_skin">phantomruby</a><br>
+						<a id="amensajitos" mensaje="Message" mensajes="Messages" target="marco" href="mensajes_ver.php" class="color_skin">0 Messages</a>
+		</div>
+	</div>
+
+	<div class="secmenu">
+		<div id="camiseta3" class="escudo" style="background: url('simulacion/generar_jugadores.php?pelo=2&amp;piel=1&amp;color1=050505&amp;color2=e30502&amp;camiseta=15&amp;foto=1') 50% 50% no-repeat;"><a target="marco" href="equipo.php"></a></div>
+		<div class="secdatos">
+			<span class="nobold color_skin">Team</span><br>
+			<a class="color_skin" target="marco" href="equipo.php?id=2430">Pippii</a><br>
+			<a class="color_skin" target="marco" id="dineros" href="caja.php"><span>$2,160,600</span></a>
+		</div>
+	</div>
+
+	
+	<div class="secmenu">
+		<div class="escudo" id="camiseta0" style="background: url('http://uk.strikermanager.com/ficheros/equipo_camiseta_foto/000/002/430/foto1.png') 50% 50% no-repeat;"><a target="marco" href="camisetas/edit.php"></a></div>
+		<div class="secdatos">
+			<span class="nobold color_skin">Kit / Colors</span><br>
+			
+			<div class="camiseta" id="camiseta1" style="background: #050505">
+				<a target="marco" href="camisetas/edit.php"></a>
+			</div>
+			
+			<div class="camiseta" id="camiseta2" style="background: #e30502">
+				<a target="marco" href="camisetas/edit.php"></a>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="secmenu">
+		<div class="escudo" id="sponsorfoto" style="background: url('sponsors_foto.php?id=0&amp;peque=1') 50% 50% no-repeat;"><a target="marco" href="sponsors.php"></a></div>
+		<div class="secdatos">
+			<span class="nobold color_skin">Sponsor</span><br>
+			<a class="color_skin" target="marco" href="sponsors.php" id="sponsornombre">No sponsor</a>
+		</div>
+	</div>
+
+</div>
+			</div>
+		</div>
+<div id="contenido">
+
+<iframe id="iframemarco" name="marco" src="/rankings.php?tipo=2&amp;pag=0" border="0" frameborder="0" scrolling="no" allowtransparency="true" style="width: 963px; height: 615px; border: 0; overflow: hidden; background: #000; margin-top: 5px; " bgcolor="#000000"></iframe>
+
+</div>
+
+<div id="tutorial" style="display: none; cursor: default; ">
+	<h1 id="tuttitulo">tutorial</h1>
+	<div id="tutinside">
+		Hi!		<br><br>
+		I am Richard, the referee of the game and I am going to give you some instructions for learning the basics.		<br><br>
+		Whenever you press 'HOME' on the top menu you will return to this screen. In the top right is a list of actions that we recommend you do, with them you will earn some money and will learn how move through the game.		<br><br>
+		Welcome and good luck!	</div>
+	<div class="sublink">
+		<a class="botonrojolargo" href="javascript:;" onclick="cerrarTutorial();">Close</a>
+		<a class="botonrojolargo" href="javascript:;" onclick="jumpTutorial();" id="botontutorial" style="display: none;"></a>
+	</div>
+</div>
+
+
+<div id="borrado_usuario" style="display: none;">
+	<h1>Deletion user warning</h1>
+	<div class="tutinside">
+		The operation has been completed correctly. Your user will be deleted definitively on -15635 days 18 hours 51 Minutes.		<br><br>
+		If you wish you can cancel this operation and get back your user by clicking on the button 'Cancel'.		<br><br>
+		If you want to continue deleting the account, please click on the button 'Exit'		<br><br>
+	</div>
+	<div class="sublink">
+		<a class="botonrojolargo" href="salircompletamente.php" target="marco" onclick="cerrarBorradoUsuario();">Cancel</a>
+		<a class="botonrojolargo" href="javascript:;" onclick="cerrarBorradoUsuario();">Exit</a>
+	</div>
+</div>
+
+
+<script>
+function showArbitroAdvertencia(precio)
+{
+	$("#overlay").fadeIn('normal');
+	$("#caja_arbitro_adv_texto").html(precio);
+	$('#caja_arbitro_adv').fadeIn();
+}
+
+function enviarOferta()
+{
+	$("#overlay").hide();
+	$('#caja_arbitro_adv').hide();
+	marco.continuarOferta();
+}
+
+function cancelarOferta()
+{
+	$("#overlay").fadeOut('normal');
+	$('#caja_arbitro_adv').fadeOut('normal');
+}
+</script>
+
+<div style="display: none; position:absolute; top:190px; left:290px; padding: 20px; width:550px; z-index: 100000;" id="caja_arbitro_adv">
+	<img src="/img/arbitro_adv2.png">
+	<div style="position:absolute; top:160px; left:250px; width:280px;">
+		<div style="color:#900; font-size: 18px;">Warning! </div>
+		<div style="color:#333; padding-top: 15px;">The price you pay for this player is considered off-market, for that reason the transaction will be investigated by fiscals in the game.</div>
+		<div style="color:#333; padding-top: 15px;">The market price for this player is <span id="caja_arbitro_adv_texto"></span>.</div>
+		<div class="botonesright" style="padding-top: 15px; margin-right: 10px;">
+			<a class="botoncorto" href="javascript:;" onclick="enviarOferta();">continue</a>
+			<a class="botoncorto" href="javascript:;" onclick="cancelarOferta();">cancel</a>
+		</div>
+
+	</div>
+</div>
+
+
+<script> 
+	var salas_chat_titulos={}; 
+	var usuario_alias='phantomruby';
+	var lt='&lt;';
+	var usuario_amensaje='';
+	var usuario_amensaje_pen='';
+
+	salas_chat_titulos['General']='Buying and selling in market chat. Friendlies or private league talk in challenges chat';  
+	salas_chat_titulos['Mercado']='Rules: Only one message per screen - no capital letters - messages not longer than two lines.';
+    salas_chat_titulos['Retos']='Chat to arrange friendlies and join private leagues';
+	salas_chat_titulos['Seniors']='Rules:Only Senior-Only 1 message per screen-no capital letters-messages not longer than 2 lines.';
+	salas_chat_titulos['Juveniles']='Rules:Only Juniors-Only 1 message per screen-no capital letters-messages not longer than 2 lines.';
+
+	
+	function ons()
+	{
+		document.frm_messenger.mensaje.value = document.frm_messenger.mensaje2.value;
+		document.frm_messenger.mensaje2.value = "";
+		if (document.frm_messenger.mensaje.value.search('http')!=-1) return true;
+
+		if (document.frm_messenger.mensaje.value.trim()=='') return false;
+
+		var StrippedString = document.frm_messenger.mensaje.value.replace(/>/ig,"&gt;");
+		StrippedString = StrippedString.replace(/</ig,"&lt;");
+		StrippedString = StrippedString.replace(/#/ig,"");
+		Salas[id_sala_actual].chats+='<br><span style=\'color: #e30502;\'>'+lt+usuario_alias+'&gt; '+StrippedString+'</span>';
+		
+		$('#chat').html(Salas[id_sala_actual].chats); 
+		//setTimeout('clear_form()', 1); 
+		
+		usuario_amensaje = usuario_amensaje_pen;
+		usuario_amensaje_pen =StrippedString;
+		if($("#chatscroll").length>0)
+                {
+                        var p= $('#chatscroll')[0].scrollHeight;
+                        $('#chatscroll').scrollTop(p);
+                }else{
+                        var p= $('#chat')[0].scrollHeight;
+                        $('#chat').scrollTop(p);
+                }
+	}
+
+</script>
+
+<div id="messenger" moderador="4">
+	<div id="submessenger">
+		<div id="menuconectados">
+			<div id="menuconectados2" mensaje="No friends connected."><img class="loading" src="/img/as/loading.gif"></div>
+			<a class="botonrojolargo" href="amigos.php?accion=lista&amp;id=11023171" target="marco">Search friends</a>
+			<a class="botonrojolargo" href="/gdata/contacts.php?accion=amigos" target="marco">Invite friend</a>
+		</div>
+		<div id="menusalaschat">
+			<ul>
+				<li><a href="javascript:;" onclick="AbrirChat('General'); esconderSalasChat();">General Chat</a></li>
+				<!--<li><a href="javascript:;" onclick="AbrirChat('Mercado'); esconderSalasChat();">Market Chat</a></li>-->
+				<li><a href="javascript:;" onclick="AbrirChat('Retos'); esconderSalasChat();">Challenges</a></li>
+				<li><a href="javascript:;" onclick="AbrirChat('Seniors'); esconderSalasChat();">Senior Market</a></li>
+				<li><a href="javascript:;" onclick="AbrirChat('Juveniles'); esconderSalasChat();">Junior Market</a></li>
+				<li><a href="javascript:;" onclick="AbrirChat('Liga-6-1012'); esconderSalasChat();">League Chat</a></li>
+			</ul>
+		</div>
+		<div id="ventanachat">
+			<div id="nombreuserchat"><a class="controlbox close"></a><a class="controlbox mini"></a><img src=""><span></span></div>
+			<a id="chatbotonplantilla" href="plantilla.php?id_usuario=3" class="botonrojocorto" target="marco">Squad</a>
+			<a id="chatbotonjuveniles" href="plantilla.php?id_usuario=3&amp;juveniles=1" class="botonrojocorto" target="marco">Junior Squad</a>
+			<div class="final"></div>
+			<div id="chat"></div>
+			<div id="chatconectados"></div>
+			<div id="entradachat">
+				<form method="post" action="chat_postm2.phc" onsubmit="ons();" target="frame_chat" name="frm_messenger" autocomplete="off" id="chat_form">
+					<input id="menskk" type="text" name="mensaje2" size="20" value="">
+					<input id="menskk2" type="hidden" name="mensaje" value="">
+					<input type="hidden" name="id" value="">
+				</form>
+				<iframe style="display: none;" name="frame_chat"></iframe>
+			</div>
+			<div class="subbordechat"></div>
+			<div class="final"></div>
+		</div>
+		<div id="salaschat">Chatrooms</div>
+		<div id="estadochat"><a title="Chat enabled" alt="Chat enabled" activo="Chat enabled" inactivo="Chat disabled" conectando="Connecting" onclick="cambiar_estado();" href="javascript:;" style="background-image: url(http://uk.strikermanager.com/img/as/online.png); "></a></div>
+		<div id="conectados" amigo="friend online" amigos="friends online">0 friends online</div>
+		<div id="boton_noticias_amigos"><a alt="" title="" activar="Active news friends" descativar="Disable news friends" onclick="toggleNoticiasAmigos();" style="background-image: url(http://uk.strikermanager.com/img/inews.png); "></a></div>
+		<div id="noticias_amigos" style="display: block; ">
+			<div style="padding: 6px 5px 5px 5px;">
+				<div style="display: block-inline; width: 620px; height: 0px; overflow: hidden;"><div style="float: left; white-space: nowrap; padding-top: 0px; padding-right: 620px; padding-bottom: 0px; padding-left: 620px; "></div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="final"></div>
+
+	<div id="barra"></div>
+
+	<div id="footerx">
+	
+
+
+		<div id="submenu">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/pantallas.php">Screenshots</a></li>
+				<li><a href="/wiki/index.php?title=Portada">What is Striker?</a></li>
+								<li><a href="/foros/foro.php?id=9">News</a></li>
+				<li><a href="/foros/index.php">Forum</a></li>
+				<li><a href="/registro.php">Sign up</a></li>
+				<li><a href="/wiki/index.php?title=CONDICIONES_DE_USO">Terms of Use</a></li>
+				<li class="last"><a href="/faq.php">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="logos">		<a href="http://www.uplayonline.com" target="_blank"><img src="/img/login/logo_uplay_online.png"></a>
+
+		</div><br><br>
+
+	</div>
+
+
+</div></div>
+
+
+
+</body></html>
