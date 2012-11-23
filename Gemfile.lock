@@ -32,6 +32,8 @@ GEM
     addressable (2.3.2)
     ansi (1.4.3)
     arel (2.2.3)
+    bootstrap-sass (2.2.1.1)
+      sass (~> 3.2)
     builder (3.0.4)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -150,12 +152,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   capybara
   capybara-webkit
   coffee-rails (~> 3.1.1)
   jquery-rails
   koala
   mysql2
+  nokogiri
   poltergeist
   rails (= 3.1.1)
   sass-rails (~> 3.1.4)

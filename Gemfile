@@ -10,6 +10,9 @@ gem 'koala'
 gem 'capybara'
 gem 'poltergeist'
 gem 'capybara-webkit'
+gem 'nokogiri'
+gem 'bootstrap-sass'
+
 
 
 
