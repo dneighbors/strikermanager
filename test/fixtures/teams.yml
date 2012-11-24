@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  private_league_id: 1
+  team_id: 1
+  division: 1
+  ranking: 1
+
+two:
+  name: MyString
+  private_league_id: 1
+  team_id: 1
+  division: 1
+  ranking: 1

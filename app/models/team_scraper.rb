@@ -27,7 +27,7 @@ class TeamScraper
     PrivateLeague.all.each do |pl|
       puts "Pulling Data from Teams for PL #{pl.name}:#{pl.league_id}"
       visit_league_url(pl.league_id)
-      sleep(10)
+      sleep(5)
       all_teams.each do |url, name|
         puts "     #{name} : #{url.split('=')[1]}"
         @team = Team.find_or_create_by_team_id(url.split("=")[1])  
@@ -45,7 +45,8 @@ class TeamScraper
     login    
 
     puts "Pulling Data from Teams"
-    Team.all.each do |team|
+   Team.all.each do |team|
+    # Team.where("id > ?", 432).each do |team|
       puts "#{team.name} : #{team.team_id}"
       load_team_data(team.team_id)
     end

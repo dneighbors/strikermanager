@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @private_league.name %>
+</p>
+
+<p>
+  <b>League:</b>
+  <%= @private_league.league_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_private_league_path(@private_league) %> |
+<%= link_to 'Back', private_leagues_path %>
